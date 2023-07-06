@@ -34,12 +34,24 @@ El proyecto hace uso de las siguientes tecnologías y herramientas:
 
 A continuación, se detallan los pasos para configurar y ejecutar el proyecto en tu entorno local:
 
-1. :open_file_folder: Clona el repositorio desde [URL del repositorio](https://github.com/tu-usuario/tu-repositorio).
-2. :inbox_tray: Instala las dependencias del frontend ejecutando el siguiente comando en la raíz del proyecto:
-3. :wrench: Configura el archivo de variables de entorno para el backend.
-4. :inbox_tray: Instala las dependencias del backend ejecutando el siguiente comando en la raíz del proyecto:
-5. :arrow_forward: Inicia el servidor backend ejecutando el siguiente comando en la raíz del proyecto:
-6. :arrow_forward: Inicia la aplicación frontend ejecutando el siguiente comando en la raíz del proyecto:
+1. :open_file_folder: Clona el repositorio desde [URL del repositorio](https://github.com/olwpad/Proyecto-Eps-Rest-Api.git).
+2. :wrench: Crea el archivo config.js para el frontend
+3. :inbox_tray: Instala las dependencias del frontend ejecutando el siguiente comando en la raíz del proyecto:
+   
+   npm install
+
+4. :wrench: Crear el  archivo .env para el backend.
+5. :inbox_tray: Instala las dependencias del backend ejecutando el siguiente comando en la raíz del proyecto:
+   
+   npm install
+   
+7. :arrow_forward: Inicia el servidor backend ejecutando el siguiente comando en la raíz del proyecto:
+
+   npm run start
+   
+9. :arrow_forward: Inicia la aplicación frontend ejecutando el siguiente comando en la raíz del proyecto:
+
+    npm run start
 
 ¡Y eso es todo! Ahora deberías poder acceder a la aplicación desde tu navegador web en [http://localhost:3000](http://localhost:3000).
 
