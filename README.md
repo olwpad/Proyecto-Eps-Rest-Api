@@ -34,7 +34,7 @@ El proyecto hace uso de las siguientes tecnologías y herramientas:
 
 A continuación, se detallan los pasos para configurar y ejecutar el proyecto en tu entorno local:
 
-1. :open_file_folder: Clona el repositorio desde [URL del repositorio](https://github.com/olwpad/Proyecto-Eps-Rest-Api.git).
+1. :open_file_folder: Clona el repositorio desde [https://github.com/olwpad/Proyecto-Eps-Rest-Api.git](https://github.com/olwpad/Proyecto-Eps-Rest-Api.git).
 2. :wrench: Crea el archivo config.js para el frontend
 3. :inbox_tray: Instala las dependencias del frontend ejecutando el siguiente comando en la raíz del proyecto:
    
@@ -58,7 +58,6 @@ A continuación, se detallan los pasos para configurar y ejecutar el proyecto en
   ```bash
  npm run dev
 ```
-[![Texto alternativo](https://img.youtube.com/vi/TU_ID_DE_VIDEO/0.jpg)](https://www.youtube.com/watch?v=zLJSY2NEnsI)
 
 ¡Y eso es todo! Ahora deberías poder acceder a la aplicación desde tu navegador web en [http://localhost:3000](http://localhost:3000).
 
