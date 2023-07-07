@@ -31,7 +31,7 @@ El proyecto hace uso de las siguientes tecnologías y herramientas:
 - :label: **TypeScript**: Un lenguaje de programación de código abierto que se basa en JavaScript.
 
  ## Pruebas 
-[:bulb: Prueba del proyecto](https://youtu.be/SO3FO7D68Wg)
+[:bulb: Prueba del proyecto](https://youtu.be/5rBtHukqdtY)
 
 
 ## Configuración
