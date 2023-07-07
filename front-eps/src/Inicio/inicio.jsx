@@ -181,7 +181,8 @@ const Buscador = () => {
         <>
           {enviado ? (
             <>
-              <p className='text-primary'> Se  elimino correctamente</p>
+              <p className='mt-3 text-primary text-center fs-5'>Se ha eliminado correctamente</p>
+
             </>
           ) : (
             <div className="mt-5">
