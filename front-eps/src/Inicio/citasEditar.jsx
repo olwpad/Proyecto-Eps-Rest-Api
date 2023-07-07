@@ -17,6 +17,7 @@ const EditarrCitaForm = ({dato}) => {
   const confirmarEnvio = () => {
     setConfirmacionVisible(false);
     TratamientoFormulario();
+  
   };
 
   const cancelarEnvio = () => {
@@ -64,7 +65,7 @@ const EditarrCitaForm = ({dato}) => {
     <div className="container mt-5">
       {enviado ? (
         <>
-          <p className='text'>Cita Creada correctamente</p>
+          <p className='text-primary'>Cita Editada correctamente</p>
         </>
       ) : (
         <><h1>Citas</h1><form id="FormularioCita" onSubmit={preconfirmacion}>

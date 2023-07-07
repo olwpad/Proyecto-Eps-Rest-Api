@@ -71,13 +71,13 @@ const EditarPacienteForm = ({dato}) => {
 
   return (
     <div className="container mt-5">
-
       {enviado ? (
         <>
-          <p  className='text-primary'>Paciente enviado correctamente</p>
+          <p  className='text-primary'>Paciente Editado correctamente</p>
         </>
       ) : (
-        <><h1>Editar Paciente</h1><form id="FormularioPaciente" onSubmit={preconfirmacion}>
+        <><h1>Editar Paciente</h1>
+        <form id="FormularioPaciente" onSubmit={preconfirmacion}>
                       <div className="mb-3">
                           <label htmlFor="PrimerNombre" className="form-label">
                               Nombre:

@@ -83,6 +83,7 @@ const Buscador = () => {
     setMostrartodo(false)
     setResultados(null)
     setEditar(false)
+    setEnviado(false)
     try {
       const response = await fetch(`${API_BASE_URL}/api/${persona}/${busqueda}`);
       const data = await response.json();
@@ -171,10 +172,7 @@ const Buscador = () => {
         <>
           {enviado ? (
             <>
-              <p>Paciente se ha eliminado correctamente</p>
-              <button type="button" className="btn btn-primary" onClick={() => setEnviado(false)}>
-                ok
-              </button>
+              <p className='text-primary'> Se  elimino correctamente</p>
             </>
           ) : (
             confirmacionVisible && resultados && (

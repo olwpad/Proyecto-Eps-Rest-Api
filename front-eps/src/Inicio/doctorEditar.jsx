@@ -18,6 +18,7 @@ const EditarDoctorForm = ({dato}) => {
   const confirmarEnvio = () => {
     setConfirmacionVisible(false);
     TratamientoFormulario();
+    setEnviado(false)
   };
 
   const cancelarEnvio = () => {
@@ -71,8 +72,7 @@ const EditarDoctorForm = ({dato}) => {
   return (
     <div className="container mt-5">
       {enviado ? (
-          <p class="text-primary ">Doctor Editado correctamente</p>
-
+          <p className="text-primary ">Doctor Editado correctamente</p>
       ) : (
         <><h1>Editar Doctor</h1>
         <form id="FormularioDoctor" onSubmit={preconfirmacion}>
