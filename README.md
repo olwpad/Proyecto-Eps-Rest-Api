@@ -1,7 +1,7 @@
 # Proyecto-Eps-Rest-Api :smiley: 
 
 
-Este es un aplicativo académico diseñado para fortalecer el conocimiento sobre REST API. Permite el registro de pacientes, doctores y citas, así como la eliminación y edición de los mismos. Además, proporciona la funcionalidad de búsqueda tanto para todos los registros según el rol como para un registro específico, también dependiendo del rol. :rocket:
+Este es un aplicativo académico diseñado para fortalecer el conocimiento sobre REST API. Permite el registro de pacientes, doctores y citas, así como la eliminación y edición de los mismos. Además, proporciona la funcionalidad de búsqueda tanto para todos los registros según el rol como para un registro específico, también dependiendo del rol.:rocket:
 
 ## Funcionalidad
 
@@ -29,6 +29,10 @@ El proyecto hace uso de las siguientes tecnologías y herramientas:
 - :gear: **Mongoose**: Una biblioteca de modelado de objetos para MongoDB y Node.js.
 - :floppy_disk: **MongoDB**: Una base de datos NoSQL de alto rendimiento y de código abierto.
 - :label: **TypeScript**: Un lenguaje de programación de código abierto que se basa en JavaScript.
+
+ ## Pruebas :bulb:
+[ Prueba del proyecto](https://youtu.be/Ep7Hz10FM0s)
+
 
 ## Configuración
 
