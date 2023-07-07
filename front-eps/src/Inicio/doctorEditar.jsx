@@ -34,7 +34,7 @@ const EditarDoctorForm = (props) => {
       Especialidad: especialidad,
       Consultorio: consultorio,
       Email: email,
-      NumeroDeCedula: numeroDeCedula
+      Doctorcedula: numeroDeCedula
     };
 
     try {
