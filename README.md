@@ -1,15 +1,15 @@
-# Proyecto-Eps-Rest-Api
+# Proyecto-Eps-Rest-Api :smiley: 
 
 
 Este es un aplicativo académico diseñado para fortalecer el conocimiento sobre REST API. Permite el registro de pacientes, doctores y citas, así como la eliminación y edición de los mismos. Además, proporciona la funcionalidad de búsqueda tanto para todos los registros según el rol como para un registro específico, también dependiendo del rol. :rocket:
 
 ## Funcionalidad
 
-Este proyecto está diseñado para cumplir con tus expectativas más altas en términos de funcionalidad. Aquí hay algunas características destacadas:
+Este proyecto está diseñado para cumplir con el concepto Rest-Api:
 
-1. :sparkles: **Característica 1**: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempus semper quam, vel consectetur est lorem cursus ac.
-2. :bulb: **Característica 2**: Fusce pellentesque tincidunt mauris, vel suscipit enim faucibus eu. Donec vitae semper sapien.
-3. :gear: **Característica 3**: Phasellus eget ultricies purus, non fermentum quam. Nulla facilisi. Pellentesque consequat efficitur metus, ut cursus enim faucibus et.
+1. :x: **Elimina**: Paciente, Doctores y Citas.
+2. :pencil2: **Edita**: Paciente, Doctores y Citas.
+3. :mag: **Busca**: Paciente, Doctores y Citas.
 
 Estas son solo algunas de las muchas características emocionantes que encontrarás en este proyecto. ¡Explora y descubre más!
 
@@ -34,12 +34,30 @@ El proyecto hace uso de las siguientes tecnologías y herramientas:
 
 A continuación, se detallan los pasos para configurar y ejecutar el proyecto en tu entorno local:
 
-1. :open_file_folder: Clona el repositorio desde [URL del repositorio](https://github.com/tu-usuario/tu-repositorio).
-2. :inbox_tray: Instala las dependencias del frontend ejecutando el siguiente comando en la raíz del proyecto:
-3. :wrench: Configura el archivo de variables de entorno para el backend.
-4. :inbox_tray: Instala las dependencias del backend ejecutando el siguiente comando en la raíz del proyecto:
-5. :arrow_forward: Inicia el servidor backend ejecutando el siguiente comando en la raíz del proyecto:
-6. :arrow_forward: Inicia la aplicación frontend ejecutando el siguiente comando en la raíz del proyecto:
+1. :open_file_folder: Clona el repositorio desde [https://github.com/olwpad/Proyecto-Eps-Rest-Api.git](https://github.com/olwpad/Proyecto-Eps-Rest-Api.git).
+2. :wrench: Crea el archivo config.js para el frontend
+3. :inbox_tray: Instala las dependencias del frontend ejecutando el siguiente comando en la raíz del proyecto:
+   
+```bash
+ npm install
+```
+4. :wrench: Crear el  archivo .env para el backend.
+5. :inbox_tray: Instala las dependencias del backend ejecutando el siguiente comando en la raíz del proyecto:
+   
+ ```bash
+ npm install
+```
+   
+7. :arrow_forward: Inicia el servidor backend ejecutando el siguiente comando en la raíz del proyecto:
+```bash
+ npm run dev
+```
+   
+9. :arrow_forward: Inicia la aplicación frontend ejecutando el siguiente comando en la raíz del proyecto:
+
+  ```bash
+ npm run dev
+```
 
 ¡Y eso es todo! Ahora deberías poder acceder a la aplicación desde tu navegador web en [http://localhost:3000](http://localhost:3000).
 
