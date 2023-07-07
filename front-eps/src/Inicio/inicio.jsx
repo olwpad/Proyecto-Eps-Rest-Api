@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState,useEffect } from 'react';
 import { API_BASE_URL } from '../config.js';
 import EditarPacienteForm from './pacienteEditar.jsx';
 import EditarrCitaForm from './citasEditar.jsx';
@@ -13,6 +13,14 @@ const Buscador = () => {
   const [enviado, setEnviado] = useState(false);// Estado: si se ha enviado correctamente una eliminación
   const [mostrartodo, setMostrartodo] = useState(false);// Estado: si se deben mostrar todos los registros 
   const [Editar, setEditar] = useState(false);// Estado: si se debe editar registro
+
+
+  useEffect(() => {
+    if (Editar) {
+      setConfirmacionVisible(false);
+    }
+  }, [Editar]);
+
   const BuscarTodos = async () => {
     try {
       const response = await fetch(`${API_BASE_URL}/api/${persona}`);
@@ -34,6 +42,7 @@ const Buscador = () => {
       alert('Error en la solicitud: ' + error);
     }
   };
+  
 
   const confirmacionEliminar = (event) => {
     event.preventDefault();
@@ -84,6 +93,7 @@ const Buscador = () => {
     setResultados(null)
     setEditar(false)
     setEnviado(false)
+    
     try {
       const response = await fetch(`${API_BASE_URL}/api/${persona}/${busqueda}`);
       const data = await response.json();
@@ -154,19 +164,18 @@ const Buscador = () => {
 
       {mostrartodo ? (
         <div className='mt-1'>
-         <h2 className="mt-5 mb-3">Resultados:</h2>
-    <ul className="list-group">
-      {resultados.map((resultado, index) => (
-        <li key={index} className="list-group-item">
-          {Object.entries(resultado).map(([clave, valor]) => (
-            <div key={clave}>
-              <strong>{clave}:</strong> {valor}
-            </div>
-          ))}
-        </li>
-
-      ))}
-    </ul>
+          <h2 className="mt-5 mb-3">Resultados:</h2>
+          <ul className="list-group">
+            {resultados.map((resultado, index) => (
+              <li key={index} className="list-group-item">
+                {Object.entries(resultado).map(([clave, valor]) => (
+                  <div key={clave}>
+                    <strong>{clave}:</strong> {valor}
+                  </div>
+                ))}
+              </li>
+            ))}
+          </ul>
         </div>
       ) : (
         <>
@@ -175,47 +184,49 @@ const Buscador = () => {
               <p className='text-primary'> Se  elimino correctamente</p>
             </>
           ) : (
-            confirmacionVisible && resultados && (
-              <div className="mt-5">
-                <h2 className="mt-5 mb-3">Resultados:</h2>
-                <ul className="list-group">
-                  {Object.entries(resultados).map(([clave, valor]) => (
-                    <li key={clave} className="list-group-item">
-                      <strong>{clave}:</strong> {valor}
-                    </li>
-                  ))}
-                </ul>
-                <button onClick={confirmacionEliminar} className="btn btn-danger m-1 ">
-                  Eliminar
-                </button>
-                <button onClick={() => setEditar(true)} className="btn btn-primary m-2">
-                  Editar
-                </button>
-                {eliminar && (
-                  <div className="mb-3">
-                    <p>¿Está seguro de eliminar esto?</p>
-                    <button className="btn btn-primary m-1" onClick={confirmarEnvio}>
-                      Confirmar
-                    </button>
-                    <button className="btn btn-secondary" onClick={cancelarEnvio}>
-                      Cancelar
-                    </button>
-                  </div>
-                )}
+            <div className="mt-5">
+              {confirmacionVisible && resultados && (
+                <>
+                  <h2 className="mt-5 mb-3">Resultados:</h2>
+                  <ul className="list-group">
+                    {Object.entries(resultados).map(([clave, valor]) => (
+                      <li key={clave} className="list-group-item">
+                        <strong>{clave}:</strong> {valor}
+                      </li>
+                    ))}
+                  </ul>
+                  <button onClick={confirmacionEliminar} className="btn btn-danger m-1 ">
+                    Eliminar
+                  </button>
+                  <button onClick={() => setEditar(true)} className="btn btn-primary m-2">
+                    Editar
+                  </button>
+                  {eliminar && (
+                    <div className="mb-3">
+                      <p>¿Está seguro de eliminar esto?</p>
+                      <button className="btn btn-primary m-1" onClick={confirmarEnvio}>
+                        Confirmar
+                      </button>
+                      <button className="btn btn-secondary" onClick={cancelarEnvio}>
+                        Cancelar
+                      </button>
+                    </div>
+                  )}
+                </>
+              )}
 
-                {Editar && (
-                  <>
-                    {persona === 'paciente' ? (
-                      <EditarPacienteForm dato={resultados} />
-                    ) : persona === 'citas' ? (
-                      <EditarrCitaForm dato={resultados} />
-                    ) : persona === 'doctor' ? (
-                      <EditarDoctorForm dato={resultados} />
-                    ) : null}
-                  </>
-                )}
-              </div>
-            )
+              {Editar && (
+                <>
+                  {persona === 'paciente' ? (
+                    <EditarPacienteForm dato={resultados} />
+                  ) : persona === 'citas' ? (
+                    <EditarrCitaForm dato={resultados} />
+                  ) : persona === 'doctor' ? (
+                    <EditarDoctorForm dato={resultados}  />
+                  ) : null}
+                </>
+              )}
+            </div>
           )}
         </>
       )}

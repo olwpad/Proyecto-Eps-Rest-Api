@@ -68,7 +68,7 @@ const EditarrCitaForm = ({dato}) => {
           <p className='text-primary'>Cita Editada correctamente</p>
         </>
       ) : (
-        <><h1>Citas</h1><form id="FormularioCita" onSubmit={preconfirmacion}>
+        <><h1> Editar Citas</h1><form id="FormularioCita" onSubmit={preconfirmacion}>
                       <div className="mb-3">
                           <label htmlFor="numeroDeCedula" className="form-label">
                               Número de documento:
