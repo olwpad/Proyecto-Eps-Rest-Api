@@ -70,13 +70,12 @@ const Buscador = () => {
       if (response.ok) {
         // Eliminación exitosa
         setEnviado(true);
-        // Realizar alguna acción adicional si es necesario
       } else {
-        // Si la eliminación no fue exitosa, lanzar un error personalizado
+      
         throw new Error('Error al eliminar el elemento');
       }
     } catch (error) {
-      // Manejar el error de eliminación
+      // error de eliminación
       console.error('Error en la solicitud: ' + error);
       alert('Ocurrió un error al eliminar el elemento');
     }

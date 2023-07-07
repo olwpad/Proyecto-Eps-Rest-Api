@@ -16,7 +16,7 @@ const Header = () => {
             </button>
             <div className="collapse navbar-collapse" id="navbarNav">
               <ul className="navbar-nav ml-auto">
-              <li className="nav-item">
+                <li className="nav-item">
                   <Link to='/doctor' className="nav-link">Doctor</Link>
                 </li>
                 <li className="nav-item">
@@ -34,6 +34,7 @@ const Header = () => {
           <Route path='/paciente' element={<AgregarPacienteForm />} />
           <Route path='/cita' element={<AgregarCitaForm />} />
           <Route path='/inicio' element={<Buscador />} />
+          <Route index element={<Buscador />} />
         </Routes>
       </Router>
     </header>
