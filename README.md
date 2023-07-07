@@ -30,8 +30,8 @@ El proyecto hace uso de las siguientes tecnologías y herramientas:
 - :floppy_disk: **MongoDB**: Una base de datos NoSQL de alto rendimiento y de código abierto.
 - :label: **TypeScript**: Un lenguaje de programación de código abierto que se basa en JavaScript.
 
- ## Pruebas :bulb:
-[ Prueba del proyecto](https://youtu.be/Ep7Hz10FM0s)
+ ## Pruebas 
+[:bulb: Prueba del proyecto](https://youtu.be/Ep7Hz10FM0s)
 
 
 ## Configuración
