@@ -53,6 +53,7 @@ A continuación, se detallan los pasos para configurar y ejecutar el proyecto en
 ```
    
 7. :arrow_forward: Inicia el servidor backend ejecutando el siguiente comando en la raíz del proyecto:
+   
 ```bash
  npm run dev
 ```
