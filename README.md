@@ -30,6 +30,34 @@ El proyecto hace uso de las siguientes tecnologías y herramientas:
 - :floppy_disk: **MongoDB**: Una base de datos NoSQL de alto rendimiento y de código abierto.
 - :label: **TypeScript**: Un lenguaje de programación de código abierto que se basa en JavaScript.
 
+  ## Endpoints
+
+A continuación se enumeran los endpoints disponibles en esta API, junto con las acciones asociadas a cada uno. Tenga en cuenta que los verbos HTTP (POST, GET, DELETE, PUT) se mencionan para indicar las acciones correspondientes a cada endpoint, pero deben eliminarse al utilizarlos:
+
+### Doctor :man_health_worker:
+
+- `POST /api/doctor`: Crea un nuevo doctor en la base de datos.
+- `GET /api/doctor/:documento`: Obtiene los datos de un doctor específico según su número de cédula.
+- `DELETE /api/doctor/:documento`: Elimina un doctor específico de la base de datos según su número de cédula.
+- `GET /api/doctor`: Obtiene todos los doctores registrados en la base de datos.
+- `PUT /api/doctor/:id`: Actualiza los datos de un doctor específico en la base de datos según su ID.
+
+### Paciente :woman_health_worker:
+
+- `POST /api/paciente`: Crea un nuevo paciente en la base de datos.
+- `GET /api/paciente/:documento`: Obtiene los datos de un paciente específico según su número de cédula.
+- `DELETE /api/paciente/:documento`: Elimina un paciente específico de la base de datos según su número de cédula.
+- `GET /api/paciente`: Obtiene todos los pacientes registrados en la base de datos.
+- `PUT /api/paciente/:id`: Actualiza los datos de un paciente específico en la base de datos según su ID.
+
+### Citas :calendar:
+
+- `POST /api/citas`: Crea una nueva cita en la base de datos.
+- `GET /api/citas/:documento`: Obtiene los datos de una cita específica según el número de cédula del paciente o el número de cédula del doctor.
+- `DELETE /api/citas/:documento`: Elimina una cita específica de la base de datos según el número de cédula del paciente o el número de cédula del doctor.
+- `GET /api/citas`: Obtiene todas las citas registradas en la base de datos.
+- `PUT /api/citas/:id`: Actualiza los datos de una cita específica en la base de datos según su ID.
+
  ## Pruebas 
 [:bulb: Prueba del proyecto](https://youtu.be/5rBtHukqdtY)
 
