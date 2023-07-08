@@ -32,7 +32,7 @@ El proyecto hace uso de las siguientes tecnologías y herramientas:
 
   ## Endpoints
 
-A continuación se enumeran los endpoints disponibles en esta API, junto con las acciones asociadas a cada uno. Tenga en cuenta que los verbos HTTP (POST, GET, DELETE, PUT) se mencionan para indicar las acciones correspondientes a cada endpoint, pero deben eliminarse al utilizarlos:
+A continuación se muestran los endpoints disponibles en esta API, junto con las acciones asociadas a cada uno. Tenga en cuenta que los verbos HTTP (POST, GET, DELETE, PUT) se mencionan para indicar las acciones correspondientes a cada endpoint, pero deben eliminarse al utilizarlos:
 
 ### Doctor :man_health_worker:
 
