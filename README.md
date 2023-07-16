@@ -10,6 +10,7 @@ Este proyecto está diseñado para cumplir con el concepto Rest-Api:
 1. :x: **Elimina**: Paciente, Doctores y Citas.
 2. :pencil2: **Edita**: Paciente, Doctores y Citas.
 3. :mag: **Busca**: Paciente, Doctores y Citas.
+4. :heavy_plus_sign: **Agrega**: Paciente, Doctores y Citas.
 
 Estas son solo algunas de las muchas características emocionantes que encontrarás en este proyecto. ¡Explora y descubre más!
 
