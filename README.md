@@ -93,6 +93,6 @@ A continuación, se detallan los pasos para configurar y ejecutar el proyecto en
  npm run dev
 ```
 
-¡Y eso es todo! Ahora deberías poder acceder a la aplicación desde tu navegador web en [http://localhost:3000](http://localhost:3000).
+¡Y eso es todo! Ahora disfruta y prueba.
 
 
